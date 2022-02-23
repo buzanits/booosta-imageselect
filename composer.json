@@ -1,0 +1,23 @@
+{
+    "name": "booosta/imageselect",
+    "description": "Select with images for PHP Booosta",
+    "license": "LGPL-3.0-only",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "booosta\\imageselect\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peter Buzanits",
+            "email": "peter@icb.at"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0.0",
+        "booosta/ui": "dev-master",
+        "harvesthq/chosen": "^1.8"
+    }
+}
