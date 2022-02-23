@@ -7,13 +7,14 @@ trait webapp
 {
   protected function preparse_imageselect()
   {
-    $lib = 'vendor/harvesthq/chosen';
+    $clib = 'vendor/bower-asset/chosen';
+    $ilib = 'vendor/bower-asset/image-select/src';
 
     if($this->moduleinfo['imageselect']):
-      $this->add_includes("<script type='text/javascript' src='{$this->base_dir}$lib/chosen.jquery.js'></script>
-            <script type='text/javascript' src='{$this->base_dir}$lib/ImageSelect.jquery.js'></script>
-            <link rel='stylesheet' type='text/css' href='{$this->base_dir}$lib/ImageSelect.css' media='screen' />
-            <link rel='stylesheet' type='text/css' href='{$this->base_dir}$lib/chosen.css' media='screen' />");
+      $this->add_includes("<script type='text/javascript' src='{$this->base_dir}$clib/chosen.jquery.js'></script>
+            <script type='text/javascript' src='{$this->base_dir}$ilib/ImageSelect.jquery.js'></script>
+            <link rel='stylesheet' type='text/css' href='{$this->base_dir}$ilib/ImageSelect.css' media='screen' />
+            <link rel='stylesheet' type='text/css' href='{$this->base_dir}$clib/chosen.css' media='screen' />");
     endif;
   }
 }
