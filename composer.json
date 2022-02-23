@@ -14,10 +14,17 @@
             "email": "peter@icb.at"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.0.0",
         "booosta/ui": "dev-master",
-        "harvesthq/chosen": "^1.8"
+        "harvesthq/chosen": "^1.8",
+        "bower-asset/image-select": "^2.0"
     }
 }
